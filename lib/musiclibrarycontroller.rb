@@ -71,6 +71,7 @@ class MusicLibraryController
   end
 
   def list_songs_by_artist
+    # Song.create_from_filename("Real Estate - Wonder Years - dream pop.mp3")
     puts "Please enter the name of an artist:"
     artist_name = gets.chomp
     # binding.pry

@@ -16,6 +16,7 @@ class Song
   end
 
   def self.all
+    @@all.sort_by!{|object| object.name }
     @@all
   end
 
@@ -59,7 +60,7 @@ class Song
 
     song.artist = artist
     song.genre = genre
-
+    # binding.pry
     song
   end
 

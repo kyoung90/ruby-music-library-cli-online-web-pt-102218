@@ -10,6 +10,7 @@ class Artist
     end
 
     def self.all
+      @@all.sort_by!{|object| object.name }
       @@all
     end
 
